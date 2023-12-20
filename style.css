@@ -1,0 +1,121 @@
+body {
+    background: linear-gradient(to bottom, #800080, #4B0082);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    max-width: 100%;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #ccc;
+}
+
+.cell.x {
+    background-color: #FF5733;
+    color: #fff;
+}
+
+.cell.o {
+    background-color: #008CBA;
+    color: #fff;
+}
+
+.status {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Existing styles */
+
+.reset-button {
+    background-color: #008CBA;
+    color: #FFFF00;
+    border: 2px solid #008CBA;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: 5px solid yellow; /* Add an outline border with a yellow color */
+}
+
+.reset-button:hover {
+    background-color: #005D7B;
+    border-color: #005D7B;
+}
+
+/* Rest of your CSS remains the same */
+
+
+/* Existing styles */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%; /* Vertically centered */
+    left: 50%; /* Horizontally centered */
+    transform: translate(-50%, -50%); /* Center the pop-up */
+    max-width: 80%; /* Limit the width of the pop-up */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Rest of your CSS remains the same */
+
+
+.popup p {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.new-game-button {
+    background-color: #008CBA;
+    color: #FFFF00;
+    border: 2px solid #008CBA;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 5px solid yellow;
+}

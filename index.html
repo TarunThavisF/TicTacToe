@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic-Tac-Toe Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="board">
+            <!-- Create a 3x3 grid for the game board -->
+            <div class="cell" onclick="makeMove(0)"></div>
+            <div class="cell" onclick="makeMove(1)"></div>
+            <div class="cell" onclick="makeMove(2)"></div>
+            <div class="cell" onclick="makeMove(3)"></div>
+            <div class="cell" onclick="makeMove(4)"></div>
+            <div class="cell" onclick="makeMove(5)"></div>
+            <div class="cell" onclick="makeMove(6)"></div>
+            <div class="cell" onclick="makeMove(7)"></div>
+            <div class="cell" onclick="makeMove(8)"></div>
+        </div>
+        <div class="status">Player X's turn</div>
+        <button class="reset-button" onclick="resetGame()">RESET</button>
+    </div>
+
+    <div class="popup" id="popup">
+        <p id="popupMessage"></p>
+        <button class="new-game-button" id="newGameButton" onclick="resetGame()">NEW GAME</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
